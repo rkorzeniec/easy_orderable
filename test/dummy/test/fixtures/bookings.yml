@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  order_count: 1
+  user_id: 1
+
+two:
+  description: MyString
+  order_count: 1
+  user_id: 1
