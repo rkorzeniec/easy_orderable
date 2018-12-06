@@ -5,7 +5,7 @@ require "orderable/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "orderable"
+  s.name        = "sharoo_orderable"
   s.version     = Orderable::VERSION
   s.authors     = ["Filip Pavic"]
   s.email       = ["pavicfp@gmail.com"]
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.2.0"
+  s.add_dependency "rails", "~> 5.0", ">= 5.0.0"
 
   s.add_development_dependency "sqlite3"
 end
