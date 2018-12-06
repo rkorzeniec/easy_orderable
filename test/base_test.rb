@@ -31,6 +31,16 @@ class BaseTest < ActiveSupport::TestCase
     assert_equal Booking.assort('slots_count,-user.first_name'), [booking1, booking2, booking3]
   end
 
+  def test_it_should_sort_records_by_joined_field_with_custom_association_name_asc
+    requests = [request1, request2]
+    assert_equal Request.assort('user.first_name', custom_association_names: { user: :renter }), [request2, request1]
+  end
+
+  def test_it_should_sort_records_by_joined_field_with_custom_association_name_desc
+    requests = [request1, request2]
+    assert_equal Request.assort('-user.first_name', custom_association_names: { user: :renter }), [request1, request2]
+  end
+
   private
 
   def user1
@@ -55,5 +65,13 @@ class BaseTest < ActiveSupport::TestCase
 
   def booking3
     @booking3 ||= Booking.create(user: user3, slots_count: 122)
+  end
+
+  def request1
+    @request1 ||= Request.create(renter: user1)
+  end
+
+  def request2
+    @request2 ||= Request.create(renter: user2)
   end
 end

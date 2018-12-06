@@ -110,6 +110,5 @@ module Orderable
     private
 
     attr_reader :args
-
   end
 end
