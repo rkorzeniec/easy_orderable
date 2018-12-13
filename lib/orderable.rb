@@ -1,6 +1,8 @@
-require "orderable/railtie"
+require "orderable/engine"
 require "orderable/base"
 
 module Orderable
-  ActiveRecord::Base.extend Orderable::Base
+  ActiveSupport.on_load(:active_record) do
+    ActiveRecord::Base.include Orderable::Base
+  end
 end

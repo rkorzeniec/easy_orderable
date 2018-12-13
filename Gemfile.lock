@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    easy_orderable (0.2)
+    easy_orderable (0.1.0)
       rails
 
 GEM
