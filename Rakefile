@@ -16,12 +16,10 @@ end
 
 require 'bundler/gem_tasks'
 
-require 'rake/testtask'
+require 'rspec/core'
+require 'rspec/core/rake_task'
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = false
-end
+desc "Run all specs in spec directory (excluding plugin specs)"
+RSpec::Core::RakeTask.new(spec: 'app:db:test:prepare')
 
-task default: :test
+task default: :spec
