@@ -1,7 +1,6 @@
 require "orderable/railtie"
 require "orderable/base"
-require "orderable/hook"
 
 module Orderable
-  Hook.init
+  ActiveRecord::Base.extend Orderable::Base
 end
