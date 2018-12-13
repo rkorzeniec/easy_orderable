@@ -5,7 +5,7 @@ require "orderable/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "orderable_assistant"
+  s.name        = "easy_orderable"
   s.version     = Orderable::VERSION
   s.authors     = ["Filip Pavic"]
   s.email       = ["pavicfp@gmail.com"]
@@ -22,4 +22,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "factory_bot_rails"
 end

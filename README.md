@@ -40,7 +40,7 @@ end
 
 ### Sort by joined column name when associations name is custom
 ```ruby
->> Request.assort('-user.first_name', custom_association_name: {user: :renter})
+>> Request.assort('-user.first_name', user: :renter)
 ```
 
 ### Sort by multiple params
@@ -67,7 +67,7 @@ end
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sharoo_orderable'
+gem 'easy_orderable'
 ```
 
 And then execute:
@@ -77,7 +77,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install sharoo_orderable
+$ gem install easy_orderable
 ```
 
 ## Contributing
