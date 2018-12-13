@@ -1,6 +1,7 @@
 require "orderable/railtie"
-# require "yaffle/core_ext"
 require "orderable/base"
+require "orderable/hook"
 
 module Orderable
+  Hook.init
 end
