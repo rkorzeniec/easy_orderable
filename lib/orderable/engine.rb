@@ -1,3 +1,4 @@
+require 'orderable/base'
 module Orderable
   class Engine < ::Rails::Engine
     config.generators do |g|
