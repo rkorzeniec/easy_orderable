@@ -1,4 +1,4 @@
-module Orderable
+module EasyOrderable
   class Assorter
     def initialize(relation, args, custom_association_names)
       @relation = relation
@@ -24,5 +24,5 @@ module Orderable
   end
 end
 
-require 'orderable/joiner'
-require 'orderable/order_arguments_transformer'
+require 'easy_orderable/joiner'
+require 'easy_orderable/order_arguments_transformer'

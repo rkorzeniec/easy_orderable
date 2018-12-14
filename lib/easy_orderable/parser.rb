@@ -1,4 +1,4 @@
-module Orderable
+module EasyOrderable
   class Parser
     def initialize(arg)
       @arg = arg

@@ -1,6 +1,6 @@
 require 'rails_helper.rb'
 
-describe Orderable::Base do
+describe EasyOrderable::Base do
   describe '#assort' do
     let!(:user_a) { create(:user, name: 'A') }
     let!(:user_b) { create(:user, name: 'B') }

@@ -1,4 +1,4 @@
-module Orderable
+module EasyOrderable
   module Base
     extend ActiveSupport::Concern
 
@@ -13,5 +13,5 @@ module Orderable
   end
 end
 
-require 'orderable/assorter'
-require 'orderable/parser'
+require 'easy_orderable/assorter'
+require 'easy_orderable/parser'

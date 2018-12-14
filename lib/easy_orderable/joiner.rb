@@ -1,4 +1,4 @@
-module Orderable
+module EasyOrderable
   class Joiner
     def initialize(relation, args, custom_association_names)
       @relation = relation

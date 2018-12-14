@@ -2,12 +2,12 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # Maintain your gem's version:
-require "orderable/version"
+require "easy_orderable/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "easy_orderable"
-  s.version     = Orderable::VERSION
+  s.version     = EasyOrderable::VERSION
   s.authors     = ["Filip Pavic"]
   s.email       = ["pavicfp@gmail.com"]
   s.homepage    = "https://github.com/sharoo/orderable"

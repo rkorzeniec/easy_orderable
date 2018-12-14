@@ -1,4 +1,4 @@
-module Orderable
+module EasyOrderable
   class OrderArgumentsTransformer
     def initialize(args)
       @args = args

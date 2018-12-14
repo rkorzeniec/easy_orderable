@@ -14,7 +14,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "orderable"
+require "easy_orderable"
 
 module Dummy
   class Application < Rails::Application

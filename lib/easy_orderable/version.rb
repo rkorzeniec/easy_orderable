@@ -1,3 +1,3 @@
-module Orderable
+module EasyOrderable
   VERSION = '0.1.0'
 end

@@ -1,5 +1,5 @@
-require 'orderable/base'
-module Orderable
+require 'easy_orderable/base'
+module EasyOrderable
   class Engine < ::Rails::Engine
     config.generators do |g|
       g.test_framework :rspec
@@ -8,9 +8,9 @@ module Orderable
       g.helper false
     end
 
-    initializer 'orderable.insert_assort_into_active_record' do |_app|
+    initializer 'easy_orderable.insert_assort_into_active_record' do |_app|
       ActiveSupport.on_load :active_record do
-        include Orderable::Base
+        include EasyOrderable::Base
       end
     end
   end

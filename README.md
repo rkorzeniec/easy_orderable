@@ -1,4 +1,4 @@
-# Orderable
+# EasyOrderable
 Easy ordering of Active Record objects
 
 ## Usage
