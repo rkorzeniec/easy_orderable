@@ -1,4 +1,5 @@
-$:.push File.expand_path("lib", __dir__)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # Maintain your gem's version:
 require "orderable/version"
@@ -15,6 +16,7 @@ Gem::Specification.new do |s|
 
   s.license     = "MIT"
 
+  s.require_paths = ["lib"]
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
 
