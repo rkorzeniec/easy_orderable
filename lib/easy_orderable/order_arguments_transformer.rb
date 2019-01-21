@@ -8,9 +8,9 @@ module EasyOrderable
       args.map do |association, direction|
         if association.include?('.')
           table_name, column_name = association.split('.')
-          "#{table_name.pluralize}.#{column_name} #{direction}"
+          "#{quote(table_name.pluralize)}.#{quote(column_name)} #{direction}"
         else
-          "#{association} #{direction}"
+          "#{quote(association)} #{direction}"
         end
       end
     end
@@ -18,5 +18,9 @@ module EasyOrderable
     private
 
     attr_reader :args
+
+    def quote(name)
+      ActiveRecord::Base.connection.quote_column_name(name)
+    end
   end
 end
