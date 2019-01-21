@@ -5,12 +5,12 @@ module EasyOrderable
     end
 
     def call
-      args.to_a.map do |e|
-        if e.first.include?('.')
-          table_name, column_name = e.first.split('.')
-          "#{table_name.pluralize}.#{column_name} #{e.second}"
+      args.map do |association, direction|
+        if association.include?('.')
+          table_name, column_name = association.split('.')
+          "#{table_name.pluralize}.#{column_name} #{direction}"
         else
-          "#{e.first} #{e.second}"
+          "#{association} #{direction}"
         end
       end
     end
