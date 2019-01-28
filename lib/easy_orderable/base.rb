@@ -4,10 +4,10 @@ module EasyOrderable
 
     class_methods do
       def assort(arg, custom_association_names=nil)
-        return all unless arg
+        return current_scope unless arg
 
         parsed_args = Parser.new(arg.delete(' ')).call
-        Assorter.new(self, parsed_args, custom_association_names).call
+        Assorter.new(current_scope, parsed_args, custom_association_names).call
       end
     end
   end
