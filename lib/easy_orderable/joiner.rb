@@ -7,6 +7,7 @@ module EasyOrderable
     end
 
     def call
+      association_names = get_association_names
       association_names.present? ? relation.joins(*association_names) : relation
     end
 
@@ -14,12 +15,12 @@ module EasyOrderable
 
     attr_reader :relation, :args, :custom_association_names
 
-    def association_names
+    def get_association_names
       table_names.map do |name|
-        if custom_association_names && custom_association_names.key?(name.to_sym)
-          custom_association_names[name.to_sym].to_sym
+        if custom_association_names && custom_association_names.key?(name)
+          custom_association_names[name].to_sym
         else
-          name.to_sym
+          name
         end
       end
     end
@@ -28,7 +29,7 @@ module EasyOrderable
       args
         .keys
         .select{ |e| e.include?('.') }
-        .map { |e| e.split('.').first }
+        .map { |e| e.split('.').first.to_sym }
     end
   end
 end
