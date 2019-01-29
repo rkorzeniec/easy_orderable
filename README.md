@@ -1,4 +1,6 @@
 # EasyOrderable
+[![CircleCI](https://circleci.com/gh/sharoo/easy_orderable.svg?style=svg&circle-token=04a7f42b10a6a8fe9b6ce6ecc259cf0bd56ac96d)](https://circleci.com/gh/sharoo/easy_orderable)
+
 Easy ordering of Active Record objects
 
 ## Usage
