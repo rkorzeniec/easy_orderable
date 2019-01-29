@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = EasyOrderable::VERSION
   s.authors     = ["Filip Pavic"]
   s.email       = ["pavicfp@gmail.com"]
-  s.homepage    = "https://github.com/sharoo/orderable"
+  s.homepage    = "https://github.com/sharoo/easy_orderable"
   s.summary     = "Easy ordering of Active Record objects"
   s.description = "Provide ordering interface for clients with minimal configuration in Active Record models"
 
