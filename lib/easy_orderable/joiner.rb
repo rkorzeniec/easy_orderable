@@ -17,7 +17,7 @@ module EasyOrderable
 
     def get_association_names
       table_names.map do |name|
-        if custom_association_names && custom_association_names.key?(name)
+        if custom_association_names&.key?(name)
           custom_association_names[name].to_sym
         else
           name
