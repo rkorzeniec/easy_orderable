@@ -6,15 +6,21 @@ Easy ordering of Active Record objects
 ## Usage
 ```ruby
 class User < ApplicationRecord
+  include EasyOrderable
+
   has_many :bookings
   has_many :requests
 end
 
 class Booking < ApplicationRecord
+  include EasyOrdearble
+
   belongs_to :user
 end
 
 class Request < ApplicationRecord
+  include EasyOrderable
+
   belongs_to :renter, class_name: 'User', foreign_key: :user_id
 end
 
