@@ -1,4 +1,4 @@
-require "easy_orderable/engine"
+require 'easy_orderable/engine'
 require 'easy_orderable/assorter'
 require 'easy_orderable/parser'
 
