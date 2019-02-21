@@ -66,7 +66,7 @@ class UsersController < ApplicationController
   private
 
   def order_param
-    params[:order]
+    params[:sort]
   end
 end
 ```
