@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
 
+## [1.2.0] - 2019-07-25
+
+### Changed
+
+- move `rails` to be a development dependency
+- depend only on `activerecord` and `activestorage`, both `>= 4.2`
+
+[1.2.0]: https://github.com/sharoo/easy_orderable/compare/v1.1.1...v1.2.0
+
 ## [1.1.1] - 2019-07-25
 
 ### Changed
