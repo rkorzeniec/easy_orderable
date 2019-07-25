@@ -9,10 +9,10 @@ project adheres to [Semantic Versioning](http://semver.org).
 ### Added
 
 - ruby version file
-- test agains mutiple ruby versions
 
 ### Changed
 
+- use ruby 2.4.6
 - circleci config
 - `rspec-rails` updated from 3.8.1 to 3.8.2
 - `factory_bot_rails` updated from 4.11.1 to 5.0.2
