@@ -1,6 +1,8 @@
 require 'rails_helper.rb'
 
 describe EasyOrderable do
+  it { expect(described_class::VERSION).to eq('1.1.0') }
+
   describe '#assort' do
     let!(:user_a) { create(:user, name: 'A') }
     let!(:user_b) { create(:user, name: 'B') }
@@ -29,7 +31,9 @@ describe EasyOrderable do
       let!(:booking_b) { create(:booking, user: user_b, slots_count: 8) }
       let!(:booking_c) { create(:booking, user: user_c, slots_count: 8) }
 
-      let(:relation) { Booking.where(id: [booking_a.id, booking_b.id, booking_c.id]) }
+      let(:relation) do
+        Booking.where(id: [booking_a.id, booking_b.id, booking_c.id])
+      end
 
       context 'asc' do
         let(:param) { 'user.name' }
@@ -63,10 +67,11 @@ describe EasyOrderable do
       let!(:request_b) { create(:request, renter: user_b) }
       let!(:request_c) { create(:request, renter: user_c) }
 
-      let(:relation) { Request.where(id: [request_c.id, request_b.id, request_a.id]) }
+      let(:relation) do
+        Request.where(id: [request_c.id, request_b.id, request_a.id])
+      end
 
       subject { relation.assort(param, user: :renter) }
-
 
       context 'asc' do
         let(:param) { 'user.name' }
