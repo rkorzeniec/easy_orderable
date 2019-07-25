@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir['spec/**/*']
 
   s.add_dependency 'activerecord', '>= 4.2'
+  s.add_dependency 'activesupport', '>= 4.2'
 
   s.add_development_dependency 'rails', '>= 4.2'
   s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
