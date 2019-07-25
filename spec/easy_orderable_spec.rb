@@ -1,7 +1,7 @@
 require 'rails_helper.rb'
 
 describe EasyOrderable do
-  it { expect(described_class::VERSION).to eq('1.1.0') }
+  it { expect(described_class::VERSION).to eq('1.1.1') }
 
   describe '#assort' do
     let!(:user_a) { create(:user, name: 'A') }

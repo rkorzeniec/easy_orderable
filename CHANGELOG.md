@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
 
+## [1.1.1] - 2019-07-25
+
+### Changed
+
+- fixing gemspec dependencies
+
+[1.1.1]: https://github.com/sharoo/easy_orderable/compare/v1.1.0...v1.1.1
+
 ## [1.1.0] - 2019-07-25
 
 ### Added
