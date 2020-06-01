@@ -173,7 +173,7 @@ DEPENDENCIES
   easy_orderable!
   factory_bot_rails (~> 5.0, >= 5.0.2)
   rails (>= 4.2)
-  rspec-rails (~> 4.0, >= 3.8.1)
+  rspec-rails (~> 4.0)
   rspec_junit_formatter (~> 0.4.1)
   rubocop (~> 0.84)
   rubocop-performance (~> 1.6.0)
