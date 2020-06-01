@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module EasyOrderable
   class OrderArgumentsTransformer
     def initialize(args)

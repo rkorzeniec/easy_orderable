@@ -1,4 +1,6 @@
-lib = File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # Maintain your gem's version:
@@ -12,7 +14,8 @@ Gem::Specification.new do |s|
   s.email       = ['pavicfp@gmail.com', 'r.korzeniec@gmail.com']
   s.homepage    = 'https://github.com/sharoo/easy_orderable'
   s.summary     = 'Easy ordering of Active Record objects'
-  s.description = 'Provide ordering interface for clients with minimal configuration in Active Record models'
+  s.description = 'Provide ordering interface for clients with minimal '\
+                  'configuration in Active Record models'
 
   s.license     = 'MIT'
 
@@ -23,9 +26,12 @@ Gem::Specification.new do |s|
   s.add_dependency 'activerecord', '>= 4.2'
   s.add_dependency 'activesupport', '>= 4.2'
 
-  s.add_development_dependency 'rails', '>= 4.2'
-  s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
-  s.add_development_dependency 'rspec-rails', '~> 3.8', '>= 3.8.1'
   s.add_development_dependency 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
+  s.add_development_dependency 'rails', '>= 4.2'
+  s.add_development_dependency 'rspec-rails', '~> 3.8', '>= 3.8.1'
   s.add_development_dependency 'rspec_junit_formatter', '~> 0.4.1'
+  s.add_development_dependency 'rubocop', '~> 0.84'
+  s.add_development_dependency 'rubocop-performance', '~> 1.6.0'
+  s.add_development_dependency 'rubocop-rails', '~> 2.5.2'
+  s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
 end
