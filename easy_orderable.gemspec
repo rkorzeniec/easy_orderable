@@ -28,4 +28,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails', '~> 3.8', '>= 3.8.1'
   s.add_development_dependency 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
   s.add_development_dependency 'rspec_junit_formatter', '~> 0.4.1'
+  s.add_development_dependency 'rubocop', '~> 0.84'
+  s.add_development_dependency 'rubocop-performance', '~> 1.6.0'
+  s.add_development_dependency 'rubocop-rails', '~> 2.5.2'
 end
