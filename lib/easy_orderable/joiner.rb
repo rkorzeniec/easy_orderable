@@ -28,7 +28,7 @@ module EasyOrderable
     def table_names
       args
         .keys
-        .select{ |e| e.include?('.') }
+        .select { |e| e.include?('.') }
         .map { |e| e.split('.').first.to_sym }
     end
   end
