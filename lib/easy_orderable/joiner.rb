@@ -9,7 +9,7 @@ module EasyOrderable
     end
 
     def call
-      association_names = get_association_names
+      association_names = retrieve_association_names
       association_names.present? ? relation.joins(*association_names) : relation
     end
 
@@ -17,7 +17,7 @@ module EasyOrderable
 
     attr_reader :relation, :args, :custom_association_names
 
-    def get_association_names
+    def retrieve_association_names
       table_names.map do |name|
         if custom_association_names&.key?(name)
           custom_association_names[name].to_sym

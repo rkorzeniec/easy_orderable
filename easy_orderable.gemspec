@@ -14,7 +14,8 @@ Gem::Specification.new do |s|
   s.email       = ['pavicfp@gmail.com', 'r.korzeniec@gmail.com']
   s.homepage    = 'https://github.com/sharoo/easy_orderable'
   s.summary     = 'Easy ordering of Active Record objects'
-  s.description = 'Provide ordering interface for clients with minimal configuration in Active Record models'
+  s.description = 'Provide ordering interface for clients with minimal '\
+                  'configuration in Active Record models'
 
   s.license     = 'MIT'
 

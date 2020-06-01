@@ -12,8 +12,13 @@ Metrics/BlockLength:
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
 Layout/LineLength:
   Max: 85
+  Exclude:
+    - 'spec/**/*'
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
@@ -21,6 +26,9 @@ Layout/SpaceAroundMethodCallOperator:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - 'spec/**/*.rb'
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
 
 Lint/RaiseException:
   Enabled: true
@@ -38,4 +46,11 @@ Style/HashTransformKeys:
   Enabled: true
 
 Style/HashTransformValues:
+  Enabled: true
+
+Style/MixinUsage:
+  Exclude:
+    - 'spec/**/*'
+
+Style/SlicingWithRange:
   Enabled: true
