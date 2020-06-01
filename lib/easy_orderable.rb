@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'easy_orderable/engine'
 require 'easy_orderable/assorter'
 require 'easy_orderable/parser'

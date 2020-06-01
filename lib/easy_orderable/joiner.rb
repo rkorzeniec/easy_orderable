@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module EasyOrderable
   class Joiner
     def initialize(relation, args, custom_association_names)
