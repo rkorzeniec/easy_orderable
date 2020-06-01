@@ -1,5 +1,28 @@
-.bundle/
-log/*.log
+# Ignore bundler config.
+/.bundle
+
+# Ignore env config files
+.env
+
+# Ignore coverage results
+/coverage/*
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/log
+/tmp
+*~
+.*
+
+# OS files
+.DS_Store
+
+#Byebug histroy
+.byebug_history
+
+#Specs
+spec/examples.txt
+coverage/
 pkg/
 spec/dummy/db/*.sqlite3
 spec/dummy/db/*.sqlite3-journal
@@ -8,3 +31,10 @@ spec/dummy/node_modules/
 spec/dummy/yarn-error.log
 spec/dummy/storage/
 spec/dummy/tmp/
+
+#do not ignore
+!.ruby-version
+!.rubocop.yml
+!.env.sample
+!.env.ci
+!.github
