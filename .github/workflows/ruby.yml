@@ -1,7 +1,7 @@
 name: Ruby
 
 env:
-  RUBY_VERSION: 2.4
+  RUBY_VERSION: 2.5
 
 on:
   push:
