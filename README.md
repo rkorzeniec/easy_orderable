@@ -89,7 +89,16 @@ $ gem install easy_orderable
 ```
 
 ## Contributing
-Contribution directions go here.
+1. [Fork it](https://github.com/rkorzeniec/easy_orderable/fork)
+2. Clone the project `git clone git@github.com:[YOUR GITHUB USERNAME]/easy_orderable.git`
+3. `cd easy_orderable`
+4. Install dependencies, `bundle install`
+5. Create your feature branch `git checkout -b my-new-feature`
+6. Write your feature, along with tests for your changes
+7. Run the tests `rake test`, all must be green
+8. Commit your changes `git commit -am 'Added some feature'`
+9. Push to the branch `git push origin my-new-feature`
+10. Create new [Pull Request](https://help.github.com/articles/creating-a-pull-request/)
 
 ## Donating
 If you enjoy using eod, you are free consider a small donation! 🙂
