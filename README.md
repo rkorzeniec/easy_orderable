@@ -91,5 +91,9 @@ $ gem install easy_orderable
 ## Contributing
 Contribution directions go here.
 
+## Donating
+If you enjoy using eod, you are free consider a small donation! 🙂
+[Buy me a cup of coffee](https://paypal.me/rkorzeniec)
+
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
