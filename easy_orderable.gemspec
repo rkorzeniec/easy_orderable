@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'activerecord', '>= 4.2'
   s.add_dependency 'activesupport', '>= 4.2'
 
-  s.add_development_dependency 'factory_bot_rails', '~> 5.2.0'
+  s.add_development_dependency 'factory_bot_rails', '~> 6.0.0'
   s.add_development_dependency 'rails', '>= 4.2'
   s.add_development_dependency 'rspec-rails', '~> 4.0'
   s.add_development_dependency 'rspec_junit_formatter', '~> 0.4.1'
