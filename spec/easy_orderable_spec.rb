@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'rails_helper.rb'
+require 'rails_helper'
 
 describe EasyOrderable do
   it { expect(described_class::VERSION).to eq('1.2.0') }

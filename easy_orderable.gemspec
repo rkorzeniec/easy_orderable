@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['spec/**/*']
-  
+
   s.required_ruby_version = '>= 2.4'
 
   s.add_dependency 'activerecord', '>= 4.2'
