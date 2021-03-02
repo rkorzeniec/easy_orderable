@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails', '~> 4.0'
   s.add_development_dependency 'rspec_junit_formatter', '~> 0.4.1'
   s.add_development_dependency 'rubocop', '~> 1.3'
-  s.add_development_dependency 'rubocop-performance', '~> 1.7.1'
+  s.add_development_dependency 'rubocop-performance', '~> 1.10.1'
   s.add_development_dependency 'rubocop-rails', '~> 2.6.0'
   s.add_development_dependency 'sqlite3', '~> 1.4.2'
 end
